@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Files from GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .file-list {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+        .file-item {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Download Files from GitHub</h1>
+    <div id="fileList" class="file-list"></div>
+
+    <!-- Navigation Link to Book List -->
+    <p><a href="books.html">Go to Book List</a></p> <!-- Link to booklist.html -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let fileLinks = [
+                { name: "Sample PDF", url: "https://raw.githubusercontent.com/KunalSnippet/LINK/main/sample.pdf" },
+                { name: "Example Document", url: "https://raw.githubusercontent.com/KunalSnippet/LINK/main/document.docx" }
+            ];
+
+            let fileListDiv = document.getElementById("fileList");
+
+            fileLinks.forEach(file => {
+                let fileItem = document.createElement("div");
+                fileItem.classList.add("file-item");
+                
+                let downloadBtn = document.createElement("a");
+                downloadBtn.href = file.url;
+                downloadBtn.download = file.name;
+                downloadBtn.textContent = `📥 Download ${file.name}`;
+                
+                fileItem.appendChild(downloadBtn);
+                fileListDiv.appendChild(fileItem);
+            });
+        });
+    </script>
+</body>
+</html>
