@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Authors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Famous Authors</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Book List</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="Search for an author...">
+        </div>
+    </section>
+
+    <!-- Author Filter Section -->
+    <section class="author-categories">
+        <div class="container">
+            <button class="filter-btn" onclick="filterByGenre('all')">All</button>
+            <button class="filter-btn" onclick="filterByGenre('fiction')">Fiction</button>
+            <button class="filter-btn" onclick="filterByGenre('non-fiction')">Non-fiction</button>
+            <button class="filter-btn" onclick="filterByGenre('mystery')">Mystery</button>
+            <button class="filter-btn" onclick="filterByGenre('science')">Science Fiction</button>
+        </div>
+    </section>
+
+    <!-- Author Profiles Section -->
+    <section id="authors" class="authors">
+        <div class="container">
+            <div class="author-card" data-genre="fiction">
+                <img src="ernest-hemingway.jpg" alt="Ernest Hemingway">
+                <h3>Ernest Hemingway</h3>
+                <p>Ernest Hemingway was an American novelist and short story writer. Known for his distinctive writing style.</p>
+                <p><strong>Notable Works:</strong> The Old Man and the Sea, A Farewell to Arms</p>
+            </div>
+            
+            <br>
+            <div class="author-card" data-genre="non-fiction">
+                <img src="malcolm gladwell.jpg" alt="Malcolm Gladwell">
+                <h3>Malcolm Gladwell</h3>
+                <p>Malcolm Gladwell is a Canadian journalist, author, and public speaker, best known for his works on psychology and sociology.</p>
+                <p><strong>Notable Works:</strong> Outliers, The Tipping Point</p>
+            </div>
+            <br>
+            <div class="author-card" data-genre="mystery">
+                <img src="agatha-christie.avif" alt="Agatha Christie">
+                <h3>Agatha Christie</h3>
+                <p>Agatha Christie was an English writer known for her detective novels, particularly those featuring Hercule Poirot and Miss Marple.</p>
+                <p><strong>Notable Works:</strong> Murder on the Orient Express, The Murder of Roger Ackroyd</p>
+            </div>
+            <br>
+            <div class="author-card" data-genre="science">
+                <img src="isaac-asimov.jpg" alt="Isaac Asimov">
+                <h3>Isaac Asimov</h3>
+                <p>Isaac Asimov was an American author and professor of biochemistry, famous for his works of science fiction and popular science.</p>
+                <p><strong>Notable Works:</strong> I, Robot, Foundation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Famous Authors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

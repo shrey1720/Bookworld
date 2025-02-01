@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.;
+    background-color: #f2E5D3;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #f2E5D3;
+    color: #211312;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #211312;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+.hero {
+    background: #3b1b03;
+    color: #f2E5D3;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero input {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Author Categories Section */
+.author-categories {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color:#3b1b03;
+    color: #f2E5D3;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    overflow: hidden; /* Ensures content doesn't spill out */
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.filter-btn:hover {
+    background-color: #864622;
+    
+        transform: translateY(-10px); /* Moves the card up by 10px */
+        transform: scale(1.05); /* Zoom effect on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for depth */
+    }
+
+
+
+/* Author Profiles Section */
+.authors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.author-card {
+    background: #fff;
+    margin-inline: center;
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Ensures content doesn't spill out */
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.author-card img {
+    width: 80%;
+    max-width: 200px; /* Adjust to your desired size */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Ensures content doesn't spill out */
+}
+.author-card:hover {
+    transform: translateY(-10px); /* Moves the card up by 10px */
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increases shadow on hover for depth */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #3b1b03;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

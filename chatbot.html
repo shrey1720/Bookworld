@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        body {
+            background-image: url('bg.jpeg'); /* Replace with the path to your image */
+            background-size: cover; /* Ensures the image covers the full screen */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background fixed as you scroll */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white; /* Text color for contrast with the background */
+
+            .home-button {
+                position: center; /* Fixes the button in place on the screen */
+                top: 20px; /* Position the button 20px from the top */
+                left: 20px; /* Position the button 20px from the left */
+                background-color: rgba(0, 0, 0, 0); /* Transparent background */
+                color: #311312; /* White text for visibility */
+                border: 5px solid #311312; /* White border for contrast */
+                padding: 10px 20px; /* Add padding for the button */
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 5px; /* Rounded corners for the button */
+                cursor: pointer; /* Makes it clear that it's clickable */
+                transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+                overflow: hidden; /* Ensures content doesn't spill out */
+                transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth hover effect */
+            }
+            
+        }
+        h1 {
+            color: #311312;
+        }
+       
+        
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Botpress Webchat Integration -->
+     <button class ="home-button" onclick="window.location.href='index.html';">HOME</button>
+     <br>
+     <h1>Ask Your Questions</h1>
+     <P style="color:#311312"><b>Bringing the AI featured chatbot where you can ask out your <br>doubts get cleared out 
+    and can get books descriptions , search for your favourite books and authors.</P></b>
+    <br>
+    <img src="books.jpg" alt="books">
+    <script>
+        window.botpressWebChat.init({
+            botId: "Chappie",
+            host: "https://your-botpress-instance.com",
+            messagingUrl: "https://your-botpress-instance.com",
+            showPoweredBy: false,
+            enableReset: true,
+            stylesheet: "https://webchat-styling.css"
+        });
+    </script>
+    
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/01/31/07/20250131072725-5YIQALSA.js"></script>
+    
+</body>
+</html>
